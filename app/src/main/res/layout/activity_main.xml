@@ -11,7 +11,32 @@
     tools:context="application.app.unit.com.unitapplication.MainActivity">
 
     <TextView
+        android:id="@+id/main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <LinearLayout
+        android:id="@+id/main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检测快捷方式" />
+        <Button
+            android:id="@+id/main_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除快捷方式" />
+        <Button
+            android:id="@+id/main_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建快捷方式" />
+    </LinearLayout>
 </RelativeLayout>
