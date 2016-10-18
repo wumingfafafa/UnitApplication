@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.main_button1) {
             if(ShortCutUtils.hasShortcut(this)) {
-                LogUtil.e("存在", false);
+                LogUtil.e("存在", true);
             }else{
-                LogUtil.e("不存在", false);
+                LogUtil.e("不存在", true);
 
             }
         } else if (view.getId() == R.id.main_button2) {
